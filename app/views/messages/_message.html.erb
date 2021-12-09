@@ -1,7 +1,16 @@
-  <div class="event">
+<div class="ui comments">
+  <div class="comment">
+    <div class="avatar">
+      <i class="big blue user icon"></i>
+    </div>
     <div class="content">
-      <div class="summary">
-        <em><%= message.user.username + ": " %></em> <%= message.body %>
+      <a class="author"><%= message.user.username %></a>
+      <div class="metadata">
+        <div class="date"><%= message.updated_at.strftime('%Y/%m/%d') %></div>
+      </div>
+      <div class="text">
+        <%= message.body %>
       </div>
     </div>
   </div>
+</div>
