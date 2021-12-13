@@ -22,6 +22,7 @@ window.scroll_bottom = function() {
 window.submit_message = function() {
   $('#message_body').on('keydown', function(e) {
     if(e.key === "Enter") {
+      $('button').click();
       e.target.value = "";
     }
   });
